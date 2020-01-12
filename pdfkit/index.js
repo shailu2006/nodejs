@@ -11,7 +11,7 @@ doc.pipe(fs.createWriteStream('./template_1.pdf'));
 // Google font: https://fonts.googleapis.com/css?family=Gelasio&display=swap
 var pdfTitle = 'Experiments with PDKFit';
 var docWidth = doc.x, docHeight = doc.y, titleHeight = 300, titleWidth = 400;
-var options = { width: titleWidth, align: 'center', baseline: 'top', underline: 'underline' };
+var options = { width: titleWidth, align: 'center', baseline: 'top', underline: true };
 var paraOptions = { width: titleWidth };
 doc.fontSize(18).font('fonts/Gelasio-Regular.ttf').text(pdfTitle, options);
 
@@ -36,7 +36,27 @@ doc.font('fonts/Gelasio-Regular.ttf').text(pdfProgressiveText, {
     height: 100,
     width: 465,
     align: 'justify'
-  });
+});
+
+// 4. Text with link.
+doc.moveDown();
+doc.fontSize(10).font('fonts/Gelasio-Bold.ttf').text('Text with link', paraOptions)
+
+doc.moveDown();
+doc.fontSize(8).text('The ', {
+    continued: true,
+    underline: false
+});
+doc.fontSize(8).fillColor('blue').text('NPM PDF kit', {
+    link: 'https://www.npmjs.com/package/pdfkit',
+    continued: true,
+    underline: true
+});
+doc.fontSize(8).fillColor('black').text(' shows how the basic example works', {
+    link: null, // To remove the link 
+    continued: true,
+    underline: false
+});
 
 // Finalize PDF file
 doc.end();
