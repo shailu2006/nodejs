@@ -19,5 +19,5 @@ Puppeteer documentation can we found <a href="https://developers.google.com/web/
 Puppeteer PDF documentation can be found <a href="https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagepdfoptions" target="_blank">here</a>.
 
 ## sheetjs-excel
-Create a simple excel file using <a href="https://docs.sheetjs.com/" target="_blank">SheetJS</a>.
-Additional we are going to extract an CSV from the Excel object and save that to a file. 
+Create a simple excel file using <a href="https://docs.sheetjs.com/" target="_blank">SheetJS</a>. <br/>
+Additionally we are going to extract an CSV from the Excel object and save that to a file. 
