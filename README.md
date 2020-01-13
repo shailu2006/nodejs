@@ -20,3 +20,4 @@ Puppeteer PDF documentation can be found <a href="https://pptr.dev/#?product=Pup
 
 ## sheetjs-excel
 Create a simple excel file using <a href="https://docs.sheetjs.com/" target="_blank">SheetJS</a>.
+Additional we are going to extract an CSV from the Excel object and save that to a file. 
