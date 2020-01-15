@@ -29,4 +29,5 @@ Explore various features of express. <br/>
 The express getting started guide can be found <a href="https://expressjs.com/en/starter/installing.html" target="_blank">here</a> <br/>
 
 Install Nodemon for better managing file changes, run the command `npm install -g nodemon`.<br/>
-To use nodemon use the command `npm start`
+To use nodemon use the command `npm start` <br/>
+Nodemon documentation can be found <a href="https://github.com/remy/nodemon#nodemon" target="_blank">here</a> <br/> 
