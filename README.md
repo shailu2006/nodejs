@@ -1,7 +1,8 @@
 # Experiments with node JS
 
 ## General  Instructions
-All projects can be run using the command `node index.js` in your projects main directory.
+All projects can be run using the command `node index.js` in your projects main directory. <br/>
+To use nodemon use the command `npm start` <br/>
 
 ## List of Experiments
 - [pdfkit](#pdfkit)
@@ -24,5 +25,8 @@ Create a simple excel file using <a href="https://docs.sheetjs.com/" target="_bl
 Additionally we are going to extract an CSV from the Excel object and save that to a file. 
 
 ## express-hello
-Explore various features of express. 
-The express getting started guide can be found <a href="https://expressjs.com/en/starter/installing.html" target="_blank">here</a> 
+Explore various features of express. <br/>
+The express getting started guide can be found <a href="https://expressjs.com/en/starter/installing.html" target="_blank">here</a> <br/>
+
+Install Nodemon for better managing file changes, run the command `npm install -g nodemon`.<br/>
+To use nodemon use the command `npm start`
